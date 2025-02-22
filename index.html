@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role Playing Game</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Role Playing Game</h1>
+    </header>
+    <aside class="section__reset">
+        <button id="reset">Recommencer la partie</button>
+    </aside>
+    <main>
+        <section class="section__player">
+            <div class="state">
+                <span>Vos stats : </span>
+            </div>
+            <div class="state">
+                <span>Points de vie :</span><span id="health"></span>
+            </div>
+            <div class="state">
+                <span>Résistance :</span><span id="resistance"></span>
+            </div>
+            <div class="state">
+                <span>Attaque :</span><span id="attack"></span><span id="weapon"></span>
+            </div>
+        </section>
+        <section class="section__text">
+            <span id="infoFightPlayer"></span>
+            <span id="infoFightMonster"></span>
+            <p id="text"></p>
+            <div id="sectionBtn" class="section__button">
+            </div>
+        </section>
+        <section class="section__monster">
+            <section id="stats__monster">
+                <div class="state">
+                    <span>Ennemi : </span><span id="nameMonster"></span>
+                </div>
+                <div class="state">
+                    <span>Points de vie :</span><span id="healthMonster"></span>
+                </div>
+                <div class="state">
+                    <span>Résistance :</span><span id="resistanceMonster"></span>
+                </div>
+                <div class="state">
+                    <span>Attaque :</span><span id="attackMonster"></span>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script type="module" src="app.js"></script>
+    <footer>
+        <a href="https://github.com/Amande-O/text-based-role-playing-game">Voir le code du projet sur Github</a>
+    </footer>
+</body>
+</html>
